@@ -110,13 +110,13 @@ const forgotPassword = asyncErrorWrapper(async (req,res,next)=>{
     let transporter = nodemailer.createTransport({
         service:'gmail',
         auth:{
-            user: 'karacafatih061@gmail.com',
+          //  user: 'kullanıcı mail adresi',
             pass: //'ednk zyvp lkwv kuip'
-             'ednkzyvplkwvkuip' 
+             // 'alınanşifre' 
         }
     });
     let mailOptions ={
-        from: 'karacafatih061@gmail.com',
+       // from: 'hedef mail',
         to:resetEmail,
         subject: 'test',
         html: emailTemplate
